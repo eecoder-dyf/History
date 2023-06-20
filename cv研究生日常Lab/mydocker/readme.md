@@ -134,10 +134,9 @@ sudo chmod a+rw /var/run/docker.sock #恢复则刷660
 or  
 
 ```
-#(不推荐此种方式，需要频繁重启docker)  
 sudo groupadd docker   #需要先允许所有人执行docker命令  
-sudo gpasswd -a [ywz/dyf/zyt] docker  # 把用户添加进docker组中  
-sudo service docker restart  # 重启docker  
+sudo usermod -aG docker ${USER} # 添加进docker组
+newgrp docker #刷新组，不用重启docker服务
 ```
 
 # 3.其他参考命令
