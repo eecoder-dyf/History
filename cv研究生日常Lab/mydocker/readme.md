@@ -91,6 +91,7 @@ cat prefixxx* > mydocker.tar.gz
 
 # 2.管理员配置完整过程[非管理员可忽略]  
 ## 宿主机安装
+装完docker直接按照这个链接安装[nvidia-container-toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#next-steps)即可
 显卡驱动装最新版本，不需要管cuda和cudnn  
 ```
 sudo apt-get update
